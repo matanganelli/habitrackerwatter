@@ -46,3 +46,13 @@ addBtn.addEventListener("click", () => {
     message.textContent = "Você já completou sua meta hoje! ☀️";
   }
 });
+
+// 🌸 Função que mostra o popup e depois o fecha suavemente
+function showPopup() {
+  popup.classList.remove("hidden");
+
+  // Fecha automaticamente após 3 segundos
+  setTimeout(() => {
+    popup.classList.add("hidden");
+  }, 3000);
+}
