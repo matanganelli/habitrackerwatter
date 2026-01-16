@@ -6,7 +6,7 @@
 let cups = 0;
 
 // 2️⃣ Definimos a meta diária (quantos copos o usuário deve beber).
-const goal = 8;
+const goal = 10;
 
 // 3️⃣ Pegamos referências aos elementos HTML que vamos atualizar.
 const progress = document.getElementById("progress");
