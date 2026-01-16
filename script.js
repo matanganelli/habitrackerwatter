@@ -1,11 +1,15 @@
+// 🧊 Estado inicial
 let cups = 0;
-const goal = 10;
+const goal = 10; // Meta alterada para 10 copos
 
+// 🔗 Conectando aos elementos
 const progress = document.getElementById("progress");
 const message = document.getElementById("message");
 const addBtn = document.getElementById("addWater");
 const popup = document.getElementById("popup");
+const closePopup = document.getElementById("closePopup");
 
+// 💧 Lógica principal
 addBtn.addEventListener("click", () => {
   if (cups < goal) {
     cups++;
@@ -24,12 +28,12 @@ addBtn.addEventListener("click", () => {
   }
 });
 
-// 🌸 Função que mostra o popup e depois o fecha suavemente
+// 🎉 Mostra o popup
 function showPopup() {
-  popup.classList.remove("hidden");
-
-  // Fecha automaticamente após 3 segundos
-  setTimeout(() => {
-    popup.classList.add("hidden");
-  }, 3000);
+  popup.classList.add("show");
 }
+
+// ✨ Fecha o popup
+closePopup.addEventListener("click", () => {
+  popup.classList.remove("show");
+});
