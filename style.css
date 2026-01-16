@@ -1,11 +1,8 @@
-/* 🌊 Tema: leveza, fluidez e cuidado */
-
 body {
   font-family: 'Inter', sans-serif;
   transition: background-color 0.3s ease-in-out;
 }
 
-/* Botão principal */
 .btn-primary {
   background-color: #38bdf8;
   color: white;
@@ -25,7 +22,7 @@ body {
   transform: scale(0.95);
 }
 
-/* Animação de onda quando a meta é atingida */
+/* 🌊 Animação de onda */
 @keyframes wave {
   0% { background-color: #e0f2fe; }
   50% { background-color: #bae6fd; }
